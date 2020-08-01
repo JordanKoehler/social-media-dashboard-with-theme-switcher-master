@@ -21,8 +21,6 @@ h4 {
   font-size: 30px;
   margin: 5% 20%;
   margin-bottom: 15%;
-  width: 80px;
-  height: 40px;
 }
 
 h5 {
@@ -33,9 +31,9 @@ h5 {
 
 h6 {
   color: hsl(228, 12%, 44%);
-  font-size: 17px;
-  margin: 5% 20%;
-margin-top: 15%;
+  font-size: 15px;
+  margin: 0 10%;
+  margin-top: 15%;
 }
 
 p {
@@ -95,31 +93,24 @@ img {
 .overview-card {
   background-color: hsl(227, 47%, 96%);
   border-radius: 5%;
+  padding: 8%;
   display:grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  width: 100%;
+  grid-template-columns: 100px 100px;
+  grid-gap: 15px;
 }
 
 .overview-card > img {
-  margin: 0 40%;
   float: right;
 }
 
 .social-up {
   font-size: 13px;
   color: hsl(163, 72%, 41%);
-  margin: 0 40%;
-  margin-top: 25%;
   text-align: right;
-  width: 20px;
-  height: 45px;
 }
 
 .social-down {
   font-size: 13px;
   color: hsl(356, 69%, 56%);
-  margin: 0 40%;
-  margin-top: 25%;
   text-align: right;
 }
