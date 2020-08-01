@@ -1,7 +1,90 @@
 body {
   font-family: 'Inter', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  color: hsl(230, 17%, 14%);
+  margin: 3%;
+}
+
+h1{
+  font-size: 60px;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  margin-top: 4%;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+p {
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 4%;
+}
+
+.switch {
+  float: right;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.social-card {
+  background-color: hsl(227, 47%, 96%);
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.facebook {
+  border-top: 5px;
+  border-top-style: solid;
+  border-top-color: hsl(208, 92%, 53%);
+}
+
+.twitter {
+  border-top: 5px;
+  border-top-style: solid;
+  border-top-color: hsl(203, 89%, 53%);
+}
+
+.instagram {
+  border-top: 5px;
+  border-top-style: solid;
+  border-top-color: linear-gradient(#fdc468, #df4996);
+}
+
+.youtube {
+  border-top: 5px;
+  border-top-style: solid;
+  border-top-color: hsl(348, 97%, 39%);
 }
 
 .overview-card {
+  background-color: hsl(227, 47%, 96%);
+  width: 250px;
+  height: 125px;
+  padding: 2px;
+  border-radius: 10px;
+}
 
+.social-up {
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
+}
+
+.social-down {
+  font-size: 12px;
+  color: hsl(356, 69%, 56%);
 }
