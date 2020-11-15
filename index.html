@@ -1,87 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__titles">
+        <h2 class="title">Social Media Dashboard</h2>
+        <p class="title">Total Followers: 23,004</p>
+      </div>
+      <div class="switch_grid">
+        <p>Dark Mode</p>
+        <label for="checkbox" class="switch">
+          <input id="sliderCheck" type="radio" />
+          <span id="slider" class="slider round"></span>
+        </label>
+      </div>
+    </header>
 
-  Dark Mode
+    <section class="main" id="card">
+      <div class="main__card social-card facebook">
+        <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+        <p>@nathanf</p>
+        <h1>1987</h1>
+        <h5>Followers</h5>
+        <p class="social-up">12 Today</p>
+      </div>
+      <div class="main__card social-card twitter">
+        <img src="images/icon-twitter.svg" alt="Facebook Icon" />
+        <p>@nathanf</p>
+        <h1>1044</h1>
+        <h5>Followers</h5>
+        <p class="social-up">99 Today</p>
+      </div>
+      <div class="main__card social-card instagram">
+        <img src="images/icon-instagram.svg" alt="Facebook Icon" />
+        <p>@realnathanf</p>
+        <h1>11Kk</h1>
+        <h5>Followers</h5>
+        <p class="social-up">1099 Today</p>
+      </div>
+      <div class="main__card social-card youtube">
+        <img src="images/icon-youtube.svg" alt="Facebook Icon" />
+        <p>Nathan F.</p>
+        <h1>8239</h1>
+        <h5>Subscribers</h5>
+        <p class="social-down">144 Today</p>
+      </div>
+    </section>
+    <h3>Overview - Today</h3>
+    <section class="" id="card">
+      <div class="overview-card">
+        <p>Page Views</p>
+        <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+        <h3>87</h3>
+        <p class="social-up">3%</p>
+      </div>
+      <div class="overview-card">
+        <p>Likes</p>
+        <img src="images/icon-facebook.svg" alt="Facebook Icon" />
+        <h3>52</h3>
+        <p class="social-down">2%</p>
+      </div>
+      <div class="overview-card">
+        <p>Likes</p>
+        <img src="images/icon-instagram.svg" alt="Facebook Icon" />
+        <h3>5462</h3>
+        <p class="social-up">2257%</p>
+      </div>
+      <div class="overview-card">
+        <p>Profile Views</p>
+        <img src="images/icon-instagram.svg" alt="Facebook Icon" />
+        <h3>52K</h3>
+        <p class="social-up">1375%</p>
+      </div>
+      <div class="overview-card">
+        <p>Retweets</p>
+        <img src="images/icon-twitter.svg" alt="Facebook Icon" />
+        <h3>117</h3>
+        <p class="social-up">303%</p>
+      </div>
+      <div class="overview-card">
+        <p>Likes</p>
+        <img src="images/icon-twitter.svg" alt="Facebook Icon" />
+        <h3>507</h3>
+        <p class="social-up">553%</p>
+      </div>
+      <div class="overview-card">
+        <p>Likes</p>
+        <img src="images/icon-youtube.svg" alt="Facebook Icon" />
+        <h3>107</h3>
+        <p class="social-down">19%</p>
+      </div>
+      <div class="overview-card">
+        <p>Total Views</p>
+        <img src="images/icon-youtube.svg" alt="Facebook Icon" />
+        <h3>1407</h3>
+        <p class="social-down">12%</p>
+      </div>
+    </section>
 
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
 </html>

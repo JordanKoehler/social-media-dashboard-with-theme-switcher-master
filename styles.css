@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: hsl(0, 0%, 100%);
   font-weight: 700;
   color: hsl(230, 17%, 14%);
@@ -28,7 +28,6 @@ h5 {
   font-weight: 400;
   letter-spacing: 4px;
   margin-top: 5px;
-
 }
 
 h6 {
@@ -52,12 +51,15 @@ img {
 /* Header */
 
 #header {
+  display: grid;
+  grid-template-columns: 1fr 200px;
   background-color: hsl(225, 100%, 98%);
   background: transparent;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  padding: 0 20px;
 }
 
 .title {
@@ -65,8 +67,13 @@ img {
   width: 300px;
 }
 
-
 /* Switch */
+
+.switch_grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .switch {
   position: relative;
@@ -81,6 +88,19 @@ img {
   height: 0;
 }
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -89,8 +109,8 @@ img {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider.round {
@@ -98,11 +118,15 @@ img {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background: linear-gradient(
+    to left,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -144,10 +168,10 @@ input:checked + .slider:before {
   border-top-color: hsl(203, 89%, 53%);
 }
 
-.instagram {
+.instagram::before {
   border-top: 5px;
   border-top-style: solid;
-  /* border-top-color: linear-gradient(#fdc468, #df4996); */
+  background-image: linear-gradient(#fdc468, #df4996);
 }
 
 .youtube {
@@ -168,7 +192,7 @@ input:checked + .slider:before {
   grid-gap: 15px;
 }
 
-.overview-card>img {
+.overview-card > img {
   float: right;
   margin-top: 3%;
   margin-right: 3%;
@@ -189,4 +213,19 @@ input:checked + .slider:before {
   text-align: right;
   margin-right: 3%;
   padding: 4%;
+}
+
+/* Dark Theme */
+.darkTheme {
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+.darkTheme__card {
+  background-color: hsl(228, 28%, 20%);
+  /* color: hsl(228, 34%, 66%); */
+}
+
+.darkTheme__card > p {
+  color: hsl(228, 34%, 66%);
 }
