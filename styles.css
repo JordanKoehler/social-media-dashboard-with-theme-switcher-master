@@ -55,7 +55,7 @@ img {
   grid-template-columns: 1fr 200px;
   background-color: hsl(225, 100%, 98%);
   background: transparent;
-  width: 100%;
+  width: 80%;
   position: absolute;
   top: 0;
   left: 0;
@@ -221,4 +221,47 @@ input:checked + .slider:before {
 
 .darkTheme__card > p {
   color: hsl(228, 34%, 66%);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 660px) {
+  body {
+    margin-left: 2.5%;
+  }
+
+  #header {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .switch_grid {
+    margin-left: 5%;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: left;
+  }
+
+  .container {
+    margin-left: 15px;
+  }
+
+  #card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin-right: 5%;
+  }
+
+  .social-card {
+    border-radius: 5%;
+    height: 250px;
+    margin-top: 25px;
+  }
+
+  .overview-card {
+    margin-top: 15px;
+  }
 }
